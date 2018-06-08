@@ -12,19 +12,23 @@
  * The logic demonstrates the decision boundary which separates the red dots
  * from the blue dots.
  * 
- * At application start, 20 random points (10 blue dots and 10 red dots) are
- * generated and loaded into a logistic regression algorithm to determine
- * a decision boundary which is displayed as a black line onscreen.
- * are displayed to the user on intialization.
- * 
+ * At application start, 20 random points are generated.
+ * The points are displayed as colored dots (10 blue dots and 10 red dots) and
+ * are subsequently loaded into a logistic regression algorithm to determine
+ * a decision boundary which best separates the red dots from the blue dots. 
+ * The decision boundary is displayed as a black line onscreen.
+ *  
  * The decision boundary is continually iterated on with each call to the draw().
  * 
- * The user may get predictions by clicking or dragging the mouse on screen 
- * after which the application will demonstrate to the user the prediction by
- * coloring the new dot by the color that it has predicted the new data point
- * to by based on the logistic regression model. This new data point is then
- * added to the existing data and used in further iterations on the decision
- * boundary.
+ * The user may get predictions from the model by clicking or dragging (for multiple predictions)
+ * the mouse on screen. 
+ * 
+ * The application will color the new dot based on the logistic regression model's prediction.
+ * Concretely, the dot will be colored red if the new data point meets the threshold for 
+ * the binary classification model. The dot will be colored blue otherwise.
+ * 
+ * The new data point is then added to the existing data and used in further iterations
+ * on the decision boundary.
  * 
  * The weights and biases of the model as well as the current cost 
  * are indicated to the user onscreen in text form continually.
