@@ -8,6 +8,26 @@
  * 
  * In this work, I extend Daniel's idea to present a an example of using
  * logistic regression for binary classification using Tensorflow.js.
+ * 
+ * The logic demonstrates the decision boundary which separates the red dots
+ * from the blue dots.
+ * 
+ * At application start, 20 random points (10 blue dots and 10 red dots) are
+ * generated and loaded into a logistic regression algorithm to determine
+ * a decision boundary which is displayed as a black line onscreen.
+ * are displayed to the user on intialization.
+ * 
+ * The decision boundary is continually iterated on with each call to the draw().
+ * 
+ * The user may get predictions by clicking or dragging the mouse on screen 
+ * after which the application will demonstrate to the user the prediction by
+ * coloring the new dot by the color that it has predicted the new data point
+ * to by based on the logistic regression model. This new data point is then
+ * added to the existing data and used in further iterations on the decision
+ * boundary.
+ * 
+ * The weights and biases of the model as well as the current cost 
+ * are indicated to the user onscreen in text form continually.
  */ 
 let blue_dots = [[randn_bm(), randn_bm(), 0],
                 [randn_bm(), randn_bm(), 0],
