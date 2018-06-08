@@ -58,7 +58,6 @@ let b = tf.variable(tf.randomUniform([1,1], 0, 1));
 const learningRate = 1;
 const optimizer = tf.train.sgd(learningRate);
 const threshold = 0.5;
-let color = 'red';
 
 // Normal distribution between 0 and 1 using Box-Muller transform.
 // found here: https://stackoverflow.com/a/49434653
@@ -138,14 +137,6 @@ function mouseDragged() {
 
 function mousePressed() {
   createPoint(mouseX, mouseY);
-}
-
-function keyPressed() {
-    if (key == 'B') {
-        color = 'blue';
-    } else if (key == 'R') {
-        color = 'red';
-    }
 }
 
 function feedForward(x) {
