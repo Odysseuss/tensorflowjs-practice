@@ -116,8 +116,9 @@ function draw() {
   let bias = b.dataSync();
   textSize(60);
   strokeWeight(0);
-  text("Bias: " + bias[0], 1140, 742);
-  text("Weight: " + weight[0], 1140, 802);
-  text(costMessage, 1140, 862);
+  
+  text("Bias: " + bias[0], 1040, 742);
+  text("Weight: " + weight[0], 1040, 802);
+  text(costMessage, 1040, 862);
   // console.log(tf.memory().numTensors);
 }
